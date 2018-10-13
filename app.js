@@ -9,13 +9,17 @@
          $scope.check = function () {
            // Recover data input
              var number = ($scope.dishes).split(',').length
+            if(number==0){
 
-             if(number > 3){
-                 $scope.reponse = "Enjoy !!"
-             } else {
-                 $scope.reponse = "Too match"
-             }
+            }else {
 
+                  if(number > 3){
+                           $scope.reponse = "Enjoy !!"
+                     } else {
+
+                            $scope.reponse = "Too match"
+              }  
+            }
          }
       }
     }
